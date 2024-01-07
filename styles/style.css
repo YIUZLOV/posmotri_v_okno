@@ -62,7 +62,6 @@ ol {
   justify-items: end;
   gap: 16px;
   font-family: 'Fira Sans Condensed', sans-serif;
-
 }
 
 .result__video-container {
@@ -70,7 +69,6 @@ ol {
   display: grid;
   inline-size: 711px;
   block-size: 386px;
-  
 }
 
 .result__video {
@@ -110,7 +108,6 @@ ol {
 
 .search-form__label:not(:last-child) {
   margin-inline-end: 10px;
-  
 }
 
 .search-form__label:has(:focus-visible) {
@@ -127,23 +124,23 @@ ol {
   background-color: transparent;
   inline-size: 225px;
   border: none;
-  border-block-start: 1px solid #FFF;
-  border-block-end: 1px solid #FFF;
+  border-block: 1px solid #fff;
   color: rgba(255, 255, 255);
   line-height: 23px;
   text-align: start;
 }
+
 .search-form__textfield::placeholder {
-  color: rgba(255, 255, 255, 0.70);
+  color: rgb(255 255 255/0.7);
 }
 
 .search-form__textfield:focus {
   outline: none;
+  border-block: 1px solid #ffffff00;
 }
 
 .search-form__textfield:active {
-  border-block-start: 1px solid transparent;
-  border-block-end: 1px solid transparent;
+  border-block: 1px solid #ffffff00;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox {
@@ -159,16 +156,17 @@ ol {
   background-color: transparent;
   inline-size: 19px;
   block-size: 19px;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
 }
 
 .button {
   background-color: transparent;
-  border: 1px solid #FFF;;
+  border: 1px solid #fff;
   text-align: center;
-  color: #FFF;
+  color: #fff;
   font-weight: 700;
   cursor: pointer;
+  padding: 0;
 }
 
 .button:focus {
@@ -195,7 +193,6 @@ ol {
   block-size: 34px;
 }
 
-
 .content__details {
   display: flex;
   flex-direction: column;
@@ -206,7 +203,7 @@ ol {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -222,7 +219,6 @@ ol {
   position: relative;
   block-size: 298px;
   overflow-y: scroll;
-  
   padding-block-start: 3px;
 }
 
@@ -237,7 +233,7 @@ ol {
 }
 
 .content__list-item:focus-visible {
-  outline: 1px solid #FFF;
+  outline: 1px solid #fff;
 }
 
 .content__list-item:hover {
@@ -255,6 +251,7 @@ ol {
   background-color: #545050;
   text-decoration: none;
 }
+
 .content__video-card {
   display: flex;
   justify-content: space-between;
@@ -262,7 +259,6 @@ ol {
 
 .content__video-card-description-container {
   inline-size: 100%;
- 
 }
 
 .content__video-card-title {
@@ -271,7 +267,7 @@ ol {
   white-space: nowrap;
   max-inline-size: 193px;
   margin-block-end: 6px;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -289,6 +285,7 @@ ol {
 }
 
 .more-button {
-  inline-size: 399px;
+  inline-size: 395px;
   block-size: 34px;
+  margin: 0 3px 3px;
 }
